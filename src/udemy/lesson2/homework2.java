@@ -50,7 +50,7 @@ public class homework2 {
         float f2 = 2.5752F;
 
         double d1 = 3.01;
-        double d2 = 1.01;
+        double d2 = 1.00;
 
         boolean bool1 = true;
         boolean bool2 = false;
