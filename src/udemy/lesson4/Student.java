@@ -40,17 +40,16 @@ class StudentTest {
         object3.english=1;
 
 
-        System.out.print("Student "+object1.name);
-        System.out.print(" "+object1.suname);
-        System.out.println(" Srednya9 ocenka "+(object1.math+object1.economy+object1.english)/3);
+        System.out.println("Student "+object1.name+" "+object1.suname+" Srednya9 ocenka "+(object1.math+object1.economy+object1.english)/3);
 
-        System.out.print("Student "+object2.name);
-        System.out.print(" "+object2.suname);
-        System.out.println(" Srednya9 ocenka "+(object2.math+object2.economy+object2.english)/3);
+/*        System.out.print("Student "+object2.name);
+        System.out.println(" "+object2.suname);
+        System.out.println("Srednya9 ocenka "+(object2.math+object2.economy+object2.english)/3);
+        System.out.println();
 
         System.out.print("Student "+object3.name);
-        System.out.print(" "+object3.suname);
-        System.out.println(" Srednya9 ocenka "+(object3.math+object3.economy+object3.english)/3);
+        System.out.println(" "+object3.suname);
+        System.out.println("Srednya9 ocenka "+(object3.math+object3.economy+object3.english)/3);*/
 
     }
 }
