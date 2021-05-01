@@ -29,7 +29,6 @@ class StudentTest {
         double a= object1.sred(object1);
         System.out.println(a);
 
-
     }
 }
 
