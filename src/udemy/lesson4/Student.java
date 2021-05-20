@@ -2,33 +2,44 @@ package udemy.lesson4;
 
 
 public class Student {
+    int studenid;
     String name;
     String suname;
-    int math;
-    int economy;
-    int english;
-    double srednya;
-    public double sred (Student stud){
-        srednya=(stud.english+stud.economy+stud.math)/3;
-        return srednya;
-    }
+    int course;
+
+    double mathAverage;
+    double economyAverage;
+    double englishAverage;
 
 
 
-    }
+
+
+}
+
+
 
 class StudentTest {
-    public static void main(String[] args) {
+
+        double sredArifmOcenka (Student st){
+            double srednyaOcenka=(st.mathAverage+st.economyAverage+st.englishAverage)/3;
+            System.out.println("Средняя оценка студента " + st.name + " " + st.suname + " " + srednyaOcenka);
+            return srednyaOcenka;
+        }
+
+        public static void main(String[] args) {
         Student object1 = new Student();
-        object1.name = "Anton";
-        object1.suname = "Lupalov";
-        object1.math = 5;
-        object1.economy = 1;
-        object1.english = 3;
-        object1.sred(object1);
-        double a= object1.sred(object1);
-        System.out.println(a);
+        object1.name = "Antona";
+        object1.suname = "Lupalova";
+        object1.mathAverage = 5;
+        object1.economyAverage = 2;
+        object1.englishAverage = 3;
+
+        StudentTest Sr1 = new StudentTest();
+        Sr1.sredArifmOcenka(object1);
+
 
     }
 }
+
 

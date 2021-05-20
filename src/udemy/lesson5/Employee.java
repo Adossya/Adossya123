@@ -25,8 +25,10 @@ class  EmployeeTes{
         Employee object2=new Employee(2,"Abramovskiy",29,11000.10,"Bankir");
         object1.uvelish();
         System.out.println(object1.salary);
+        System.out.println(object1.department);
         object2.uvelish();
         System.out.println(object2.salary);
+        System.out.println(object2.department);
 
     }
 }
