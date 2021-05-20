@@ -32,7 +32,7 @@ public class Home6work1 {
 class Proverka {
     public static void main(String[] args) {
         Home6work1 h1=new Home6work1();
-        h1.show(0);
+        h1.show();
         h1.show(3);
         h1.show(3,5);
         h1.show(1,3,4);
