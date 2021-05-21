@@ -15,8 +15,7 @@ public class Home6work2 {
         this (id3,name3,suname3,course3,0.0,0.0,0.0);
     }
     Home6work2 (){
-        this (0,null,null,0,0.0,0.0,0.0);
-    }
+            }
     int id;
     String name;
     String suname;
@@ -28,13 +27,36 @@ public class Home6work2 {
 
 }
 class StudentTest {
+        double sum (Home6work2 s1){
+            double result = (s1.mathAverage+s1.economyAverage+s1.mathAverage)/3;
+            System.out.println("Srednya Arifmeticheskaya: "+result);
+                    return result;
+            }
+
+
+
     public static void main(String[] args) {
         Home6work2 h1=new Home6work2(1,"Anton","Lupalov",4,5.0,6.0,6.0);
-        Home6work2 h2=new Home6work2(3,"Dmitriy","Abramovskiy",3);
+
+        Home6work2 h2=new Home6work2(2,"Dmitriy","Abramovskiy",3);
+        h2.mathAverage = 4.0;
+        h2.economyAverage= 3.0;
+        h2.englishAverage = 4.0;
+
         Home6work2 h3=new Home6work2();
-        System.out.println(h1.id);
-        System.out.println(h2.name);
-        System.out.println(h3.name);
+        h3.id = 3;
+        h3.name = "Karina";
+        h3.suname = "Lupalova";
+        h3.course = 1;
+        h3.mathAverage = 5.0;
+        h3.economyAverage = 4.0;
+        h3.englishAverage = 5.0;
+
+        StudentTest s10=new StudentTest();
+        s10.sum(h1);
+        s10.sum(h2);
+        s10.sum(h3);
+
 
 
     }
