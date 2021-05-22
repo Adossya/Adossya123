@@ -20,6 +20,6 @@ class StudentTest {
         object1.math = 5;
         object1.economy = 1;
         object1.english = 3;
-        System.out.println("fads");
+        System.out.println(object1.name+" "+object1.suname);
     }
 }

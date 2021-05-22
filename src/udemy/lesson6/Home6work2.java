@@ -12,7 +12,7 @@ public class Home6work2 {
 
     }
     Home6work2 (int id3, String name3, String suname3, int course3){
-        this (id3,name3,suname3,course3,0.0,0.0,0.0);
+               this (id3,name3,suname3,course3,0.0,0.0,0.0);
     }
     Home6work2 (){
             }
@@ -29,7 +29,7 @@ public class Home6work2 {
 class StudentTest {
         double sum (Home6work2 s1){
             double result = (s1.mathAverage+s1.economyAverage+s1.mathAverage)/3;
-            System.out.println("Srednya Arifmeticheskaya: "+result);
+            System.out.println("Srednya Arifmeticheskaya studenta "+ s1.name +" "+s1.suname + ": "+result);
                     return result;
             }
 
