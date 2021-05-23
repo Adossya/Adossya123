@@ -36,13 +36,13 @@ public class PrimitiveDataTypes {
 
         int a1 = 60;
 
-        int a2 = 0b111100;
+        int a2 = 0b111100; // 2 система исчесления
 
-        int a3 = 0B111100;
+        int a3 = 0B111100; // 2 система исчесления
 
-        int a4 = 0_74;
+        int a4 = 0_74;// 8 система исчесления
 
-        int a5 = 0x3C;
+        int a5 = 0x3C;// 16 система исчесления
         int a6 = 0X3C;
 
 
