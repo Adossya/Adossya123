@@ -1,4 +1,4 @@
-package udemy.Lesson7_1;
+package udemy.lesson7_1;
 
 
 
