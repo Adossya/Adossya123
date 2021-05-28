@@ -29,11 +29,7 @@ public class StudentTest {
           else {
             System.out.println("У студентов разные имена ");
         }
-
-
     }
-
-
 
     public static void main(String[] args) {
         Student st1=new Student("Antoha",3,4.0);
