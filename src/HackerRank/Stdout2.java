@@ -3,18 +3,16 @@ package HackerRank;
 import java.util.Scanner;
 
 public class Stdout2 {
+
+
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+     Scanner scan = new Scanner(System.in);
         int i=scan.nextInt();
 
+        double d=scan.nextDouble();
+        String s1=scan.nextLine();
+        String s=scan.nextLine();
 
-
-        Scanner scan2 = new Scanner(System.in);
-        double d=scan2.nextDouble();
-
-        Scanner scan3 = new Scanner(System.in);
-        String s;
-        s=scan3.nextLine();
 
 
 
