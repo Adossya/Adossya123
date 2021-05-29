@@ -15,8 +15,7 @@ public class JavaIfElse {
     }
 
     public static void main(String[] args) {
-
-      zadachka(24);
+         zadachka(24);
     }
 
 }
