@@ -1,23 +1,59 @@
-/*package HackerRank;
+package HackerRank;
 
 public class JavaIfElse {
-    int n;
 
-    public static void zadachka (int n) {
-        if (n % 2 == 0) {
+    public static void  zadachka (int n) {
+
+        if (n%2==1) {
             System.out.println("Weird");
-        }
-        if (2<=n<=5){
+        } else if (n%2==0 && n>=2 && n<=5){
             System.out.println("Not Weird");
-        }
-        if (6<=n<=20){
+        } else if (n%2==0 && n>=6 && n<=20){
             System.out.println("Weird");
-    }
-        if (n>20){
+         } else if (n%2==0 && n>20){
             System.out.println("Not Weird");}
     }
-    }
+
     public static void main(String[] args) {
-        zadachka(3);
+
+      zadachka(24);
     }
-}*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    if (n%2==0) {System.out.println("Weird");
+            if (n>=2 && n<=5){System.out.println("Not Weird");
+                    if (n>=6 && n<=20){System.out.println("Weird");
+                        if (n>20){ System.out.println("Not Weird");}
+                        else {}}
+                    else {}}
+            else {}}}*/
+
+   /* if (n%2==0)    {
+        System.out.println("Weird");}
+    else {System.out.println("Not Weird");}
+    if (n>=2 && n<=5) {
+        System.out.println("Not Weird");    }
+        else {System.out.println("Weird");}
+    if (n>=6 && n<=20){
+            System.out.println("Weird"); }
+        else {System.out.println("Not Weird");}
+    if (n>20){
+            System.out.println("Not Weird");}
+        else {System.out.println("Weird"); }
+    }*/
