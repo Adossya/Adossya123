@@ -15,6 +15,8 @@ public class PrimitiveDataTypes {
 
         long l1 = 1000;
         long l2 = 10000000000L;
+        long l3 = 9_223_372_036_854_775_807L;
+        System.out.println(l3);
 
         float f1 = 3.14f;
         float f3 = 20.0f;
