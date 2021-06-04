@@ -5,6 +5,7 @@ public class Homework {
     public static void showEmail (String email){
         int a=email.indexOf('@');
         System.out.println(email.substring(a+1,email.indexOf('.')));
+
     }
 
    public static void showEmailLine (String s) {
@@ -14,6 +15,7 @@ public class Homework {
        int b = 0;
        int c = 0;
        while (c < s.length() - 1) {
+
            a = s.indexOf('@', c);
            b = s.indexOf('.', c);
            c = s.indexOf(';', c + 1);
