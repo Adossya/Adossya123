@@ -16,8 +16,10 @@ public class Homework17 {
     public static void main(String[] args) {
         StringBuilder sb1=new StringBuilder("Hi Tanya");
         StringBuilder sb2=new StringBuilder("Hi Tanya");
+        StringBuilder sb3=new StringBuilder("Hi Anton");
     /*    System.out.println(ravenstvo(sb1,sb2));*/
         ravenstvo(sb1,sb2);
         System.out.println(ravenstvo2(sb1,sb2));
+        ravenstvo(sb2,sb3);
     }
 }
