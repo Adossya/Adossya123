@@ -9,7 +9,7 @@ public class TwiceAsOld {
 
 
         return otv>0?otv:-otv;}
-}
+
 
 
     public static void main(String[] args) {
