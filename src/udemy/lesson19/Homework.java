@@ -20,6 +20,7 @@ public class Homework {
     public static void main(String [] args) {
         String [] target=abc(new String [] {"Abc","Pola","Lolka"},new String[]{"FHJ","dsds","d232131"});
       //  abc(args);
+
         for (String s1:args){
             System.out.print(s1+" ");
 
