@@ -1,33 +1,26 @@
-package CodeWars;
+import java.util.List;
+import java.util.stream.*;
 
 public class test {
-    public static String warnTheSheep(String[] array) {
-        String wolf=" ";
-        for (int i=0;i< array.length;i++){
-            for (int j=i+1;j<array.length;j++){
 
-                if (array[i].equals(array[j])){continue;
-                }else if(j==array.length-1) {
-                    wolf="Pls go away and stop eating my sheep";
-                }
-                else  if (!array[i].equals(array[j+1]) && j+1< array.length ){
-                    array[j]=String.valueOf(array.length-j);
-                    wolf="Oi! Sheep number "+array[j]+ "! You are about to be eaten by a wolf!";
-                }
-                else    {
-                    array[j]=String.valueOf(array.length-j-1);
-                    wolf="Oi! Sheep number "+array[j]+ "! You are about to be eaten by a wolf!";
-                }break;
-            }break;
+    static List<Integer> lexOrder(int n) {
+        int first = 1, last = n;
+        if (n < 1) {
+            first = n;
+            last = 1;
         }
-
-        return wolf;
+        return IntStream.rangeClosed(first, last)
+                .mapToObj(Integer::toString)
+                .sorted()
+                .map(Integer::valueOf)
+                .collect(Collectors.toList());
     }
 
-
     public static void main(String[] args) {
-        String [] array={"wolf"};
-        System.out.println(warnTheSheep(array));
-
+        System.out.println("In lexicographical order:\n");
+        int[] ints = {100_000};
+        for (int n : ints) {
+            System.out.printf("%3d: %s\n", n, lexOrder(n));
+        }
     }
 }
