@@ -21,11 +21,11 @@ public class StrangeMathematics {
                                         }
                 }
 
-            if (array[i]==0){
-
-                array[i]=d++;
-
-            }
+//            if (array[i]==0){
+//
+//                array[i]=d++;
+//
+//            }
             }
         int dima=0;
         for (int l=0;l<array.length;l++){
@@ -42,6 +42,6 @@ public class StrangeMathematics {
 
     public static void main(String[] args) {
 
-        System.out.println(mathematics(11,2));
+        System.out.println(mathematics(13,2));
     }
 }
