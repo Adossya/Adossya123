@@ -3,8 +3,10 @@ package udemy.lesson20;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+import java.util.Collections;
+
 public class Homework20 {
-    public static String [] abc(String []... array){
+    public static ArrayList<String> abc(String []... array){
 
         ArrayList <String> list1=new ArrayList<>();
                     for (String [] a:array){
@@ -18,8 +20,8 @@ public class Homework20 {
                                 list1.remove(j);j=j-1;}
                         }
                     }
-
-        return list1.toArray(new String[list1.size()]);
+        Collections.sort(list1);
+        return list1;
     }
 
     public static void main(String[] args) {
@@ -27,6 +29,6 @@ public class Homework20 {
         String [] array2={"Dima","Vasya","Anton"};
         String [] array3={"Dima","Vasya","Anton","Evlampiy"};
         String [] array4={"Dima","Dima","Dima","Dima"};
-        System.out.println(Arrays.toString(abc(array1,array2,array3,array4,array4,array4,array4)));
+        System.out.println(abc(array1,array2,array3,array4,array4,array4,array4));
     }
 }
