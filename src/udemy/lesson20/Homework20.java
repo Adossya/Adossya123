@@ -2,7 +2,6 @@ package udemy.lesson20;
 
 import java.util.Arrays;
 import java.util.ArrayList;
-
 import java.util.Collections;
 
 public class Homework20 {
@@ -10,16 +9,10 @@ public class Homework20 {
 
         ArrayList <String> list1=new ArrayList<>();
                     for (String [] a:array){
-                        for (String b:a){
-                            list1.add(b);}
+                        for (String s1:a){
+                            if (!list1.contains(s1))
+                            list1.add(s1);}
                         }
-
-                    for (int i=0;i<list1.size();i++){
-                        for (int j=i+1;j<list1.size();j++){
-                                if (list1.get(i).compareTo(list1.get(j))==0 && j>0){
-                                list1.remove(j);j=j-1;}
-                        }
-                    }
         Collections.sort(list1);
         return list1;
     }

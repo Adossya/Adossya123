@@ -3,48 +3,38 @@ package CodeWars;
 public class OverTheRoad {
 
     public static long overTheRoad(long address, long n) {
-        int a=(int)n;
-        long l=address;
-        long [] array=new long [a];
-        long p=address;
-        long p1=address;
-        long q=100;
-        for (int i=0;i<n;i++,l+=2){
-            array[i]=(int)l;
-        }
+        long l=1;
+        long [] array5=new long [(int)n];
+        long q=0;
 
-                     for (int i = 0; i <array.length/2; i++) {
-                            long tmp = array[i];
-                            array[i] = array[array.length - i - 1];
-                            array[array.length - i - 1] =tmp;}
+                     for (int i=0;i<array5.length;i++,l+=2){
+                            array5[i]=l;
+                     }
 
+                     for (int i = 0; i <array5.length/2; i++) {
+                            long tmp = array5[i];
+                            array5[i] = array5[array5.length - i - 1];
+                            array5[array5.length - i - 1] =tmp;}
 
-        long [] array1=new long [a];
+                     long [] array1=new long [(int)n];
+                     long p=2;
                      for (int k=0;k<array1.length;k++,p+=2){
-                            array1[k]=(int)p+1;}
+                            array1[k]=(int)p;}
 
-        long [] array3=new long [a];
-                     for (int i=0;i<n;i++,p1+=2){
-                            array3[i]=(int)p1;}
+                     int dima=0;
+                     for (int k1=0;k1<array5.length;k1++) {
+                         if (address == array5[k1]) {
+                             dima = k1;
+                         }
+                         if (address == array1[k1]) {
+                             dima = k1;
+                         }
+                     }
 
-
-        int dima=0;
-                     for (int k1=0;k1<array3.length;k1++){
-                            if (address==array3[k1]){dima=k1;}}
-
-
-
-                     for (int i=dima;i<array1.length;i++){
-                         q=array1[i];}
-
-        for (long eqwe:array){
-            System.out.print(eqwe+" ");
-        }
-        System.out.println();
-        for (long da:array1){
-            System.out.print(da+" ");
-        }
-        System.out.println();
+                     for (int i=0;i<array1.length;i++){
+                         if (address%2==0){q=array5[dima];}
+                         if (address%2==1){q=array1[dima];}
+                     }
 
         return q;
     }
