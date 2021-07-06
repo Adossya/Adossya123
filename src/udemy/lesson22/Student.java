@@ -3,9 +3,8 @@ package udemy.lesson22;
 public class Student {
     private StringBuilder name=new StringBuilder();
     public StringBuilder setName (String imya){
-        if (imya.length()>2){
+        if (imya.length()>3){
             this.name=new StringBuilder(imya);
-
             return name;
         } else {
             System.out.println("Длинна имени должна быть больше 3 символов");
@@ -40,7 +39,7 @@ public class Student {
     public void getGrade (){
         System.out.println(grade);
     }
-    public void showInfo (Object a){
+    public void showInfo (){
         getInfo();
         getCourse();
         getGrade();
@@ -52,7 +51,7 @@ class TestStudent {
         s1.setName("Anton");
         s1.setCourse(3);
         s1.setGrade(4);
-        s1.showInfo(s1);
+        s1.showInfo();
     }
 }
 
