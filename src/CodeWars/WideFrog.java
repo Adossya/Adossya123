@@ -1,6 +1,6 @@
 package CodeWars;
 
-public class TheWideMouthedFrog {
+public class WideFrog {
     public static String mouthSize(String animal){
 
         return animal=="alligator"|| animal=="ALLIGATOR"?"small":"wide";
@@ -9,3 +9,4 @@ public class TheWideMouthedFrog {
         System.out.println(mouthSize("ALLIGATOR"));
     }
 }
+
