@@ -11,8 +11,8 @@ public class CirclesInPolygons {
 
     public double circleDiameter(){
 
-
-        return sideLength;
+        double r=sideLength*Math.cos(180/sides);
+        return r;
 
     }
 
