@@ -14,9 +14,8 @@ public class JavaStrings {
         }
     }
     public static String upperCase (String A, String B){
-        String s1=A.toUpperCase();
-        System.out.println(s1);
-        return "1";
+        String s1=A.substring(0,1).toUpperCase()+A.substring(1)+" "+B.substring(0,1).toUpperCase()+B.substring(1);
+        return s1;
     }
 
     public static void main(String[] args) {
@@ -25,6 +24,6 @@ public class JavaStrings {
         String B =s1.nextLine();
         System.out.println(sumLength(A,B));
         sravnenie(A,B);
-        upperCase(A,B);
+        System.out.println(upperCase(A,B));
     }
 }
