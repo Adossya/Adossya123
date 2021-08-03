@@ -5,9 +5,14 @@ public class test4 {
         Employee2 emp1=new Doctor1();
         Employee2 emp2=new Teacher1();
         Employee2 emp3=new Driver1();
-        Doctor1 d1=(Doctor1) emp1;
-        System.out.println(d1.specializaciya);
-        ((Doctor1)emp1).lechit();
+        Employee2 emp4=new Employee2();
+        Employee2 [] array={emp1,emp2,emp3,emp4};
+        for (Employee2 e:array){
+            if(e instanceof Driver1){
+                System.out.println(((Driver1)e).nazvanieMashin);
+                ((Driver1)e).vodit();
+            }
+        }
 
     }
 
