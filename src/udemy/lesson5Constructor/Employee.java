@@ -1,4 +1,4 @@
-package udemy.lesson5;
+package udemy.lesson5Constructor;
 
 public class Employee {
     Employee (int nomer, String familiya, int vozrast, double zp, String dolgnost) {

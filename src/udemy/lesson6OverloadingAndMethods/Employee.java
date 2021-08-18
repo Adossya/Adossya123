@@ -1,4 +1,4 @@
-package udemy.lesson6;
+package udemy.lesson6OverloadingAndMethods;
 
 public class Employee {
     Employee(int id2, String surname2, int age2){

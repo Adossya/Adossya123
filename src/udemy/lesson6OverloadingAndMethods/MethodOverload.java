@@ -1,4 +1,4 @@
-package udemy.lesson6;
+package udemy.lesson6OverloadingAndMethods;
 
 public class MethodOverload {
     void show (int i1){

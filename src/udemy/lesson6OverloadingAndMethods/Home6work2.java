@@ -1,4 +1,4 @@
-package udemy.lesson6;
+package udemy.lesson6OverloadingAndMethods;
 
 public class Home6work2 {
     Home6work2 (int id2, String name2, String suname2, int course2, double mathAverage2, double economyAverage2, double englishAverage2){

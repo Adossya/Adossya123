@@ -1,4 +1,4 @@
-package udemy.lesson3;
+package udemy.lesson3Summ;
 
 public class test4 {
     public static void main(String[] args) {

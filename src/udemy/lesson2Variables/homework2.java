@@ -1,4 +1,4 @@
-package udemy.lesson2;
+package udemy.lesson2Variables;
 
 public class homework2 {
     public static void main(String[] args) {

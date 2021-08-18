@@ -1,4 +1,4 @@
-package udemy.lesson4;
+package udemy.lesson4ClassObject;
 
 
 public class Student {

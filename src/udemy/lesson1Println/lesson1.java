@@ -1,4 +1,4 @@
-package udemy.lesson1;
+package udemy.lesson1Println;
 
 public class lesson1 {
     public static void main(String[] args) {

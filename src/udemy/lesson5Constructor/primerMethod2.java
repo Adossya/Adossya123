@@ -1,4 +1,4 @@
-package udemy.lesson5;
+package udemy.lesson5Constructor;
 
 public class primerMethod2 {
     String color;

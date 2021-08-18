@@ -1,4 +1,4 @@
-package udemy.lesson6;
+package udemy.lesson6OverloadingAndMethods;
 
 public class MethodOverloading2 {
     int sum (int i1, int i2){

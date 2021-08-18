@@ -1,4 +1,4 @@
-package udemy.lesson2;
+package udemy.lesson2Variables;
 
 public class PrimitiveDataTypes {
     public static void main(String[] args) {

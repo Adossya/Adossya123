@@ -1,4 +1,4 @@
-package udemy.lesson6;
+package udemy.lesson6OverloadingAndMethods;
 
 public class Home6work1 {
     int show () {

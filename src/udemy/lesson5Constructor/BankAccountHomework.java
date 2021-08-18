@@ -1,6 +1,4 @@
-package udemy.lesson5;
-
-import udemy.lesson4.lesson4test1;
+package udemy.lesson5Constructor;
 
 public class BankAccountHomework {
     int id;
