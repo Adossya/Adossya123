@@ -13,5 +13,6 @@ public class Test2 {
         catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Bil poyman expection");
         }
+
     }
 }
