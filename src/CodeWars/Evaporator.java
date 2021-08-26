@@ -1,6 +1,6 @@
 package CodeWars;
 
-public class DeodorantEvaporator {
+public class Evaporator {
     public static int evaporator(double content, double evap_per_day, double threshold) {
         threshold=content/100*threshold;
         int days=0;
