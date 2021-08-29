@@ -11,6 +11,6 @@ public class Evaporator {
     }
 
     public static void main(String[] args) {
-        System.out.println(evaporator(10, 10, 5));
+        System.out.println(evaporator(10, 10, 10));
     }
 }

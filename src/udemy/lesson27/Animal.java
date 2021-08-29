@@ -1,5 +1,7 @@
 package udemy.lesson27;
 
+
+
 class Lesson24{
     public static void main(String[] args) {
         Mechenosec m1=new Mechenosec("RibaMe4");
@@ -18,6 +20,7 @@ class Lesson24{
         m2.eat();
         m2.sleep();
         m2.run();
+
     }
 }
 abstract public class Animal {

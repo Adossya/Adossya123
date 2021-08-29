@@ -2,7 +2,7 @@ package udemy.lesson31ErrorsPart1;
 
 public class Test1 {
     public static void main(String[] args) {
-    Animal an=new Tiger();
+    Animal an=new Tiger10();
         System.out.println(an.a);
         System.out.println(an.b);
         an.abc();
@@ -22,7 +22,7 @@ class Animal{
         }
 }
 
-class Tiger extends Animal {
+class Tiger10 extends Animal {
     int a=15;
     static int b=20;
     void abc (){
