@@ -5,7 +5,8 @@ public class Test5 {
     public static void main(String[] args) {
         LocalDate ld1=LocalDate.of(2013,5,3);
         LocalDateTime ldt=LocalDateTime.of(2016,Month.APRIL,1,16,40);
-        System.out.println(ldt.getDayOfWeek());
+        System.out.println(ld1.getDayOfWeek());
+        String s=""+ld1.getDayOfWeek()+"";
         System.out.println(ldt.getMonthValue());
         System.out.println(ldt.getMonth());
     }
