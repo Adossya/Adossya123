@@ -11,6 +11,7 @@ public class Animal {
     public void drink (){
         System.out.println("Animal drinks");
     }
+
 }
 class Pet extends Animal {
     public Pet (){
@@ -45,7 +46,9 @@ class  Cat extends  Pet{
 }
 class  Test {
     public static void main(String[] args) {
+
         Dog d1=new Dog("Danya");
+        System.out.println(d1 instanceof Animal);
         System.out.println("The dog has paws: " +d1.paw);
         Cat c1=new Cat("Pusha");
         c1.sleep();

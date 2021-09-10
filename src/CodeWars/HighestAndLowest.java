@@ -20,6 +20,8 @@ public class HighestAndLowest {
             }}
         return result;
         }
+        String s="7";
+        int i=Integer.parseInt(s);
 
 
 
