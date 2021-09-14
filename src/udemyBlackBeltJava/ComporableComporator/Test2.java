@@ -15,12 +15,12 @@ public class Test2 {
         list25.add(emp2);
         list25.add(emp3);
         System.out.println(list25);
-        Collections.sort(list25, new IdComparator());
+        Collections.sort(list25, new NameComparator());
         System.out.println(list25);
 
     }
 }
-class Employee25 {
+class Employee25 implements Comparable<Employee25>{
     int id;
     String name;
     String suname;
@@ -43,40 +43,30 @@ class Employee25 {
                 '}';
     }
 
-//    @Override
-//    public int compareTo(Employee25 anotherEmp) {
-//        if (this.id==anotherEmp.id){
-//            return 0;
-//        }
-//        else  if(this.id<anotherEmp.id){
-//            return -1;
-//        }
-//        else  {
-//        return 1;
-//    }
-}
-class IdComparator implements Comparator <Employee25>{
+    @Override
+    public int compareTo(Employee25 anotherEmp) {
+        if (this.id==anotherEmp.id){
+            return 0;
+        }
+        else  if(this.id<anotherEmp.id){
+            return -1;
+        }
+        else  {
+        return 1;
+    }
+}}
+class SalaryComparator implements Comparator <Employee25>{
 
     @Override
     public int compare(Employee25 emp1, Employee25 emp2) {
-        if (emp1.id == emp2.id){
-        return 0;}
-        else if (emp1.id<emp2.id){
-            return  -1;
-        }
-        else {return 1;}
-    }
-    class IdComparator implements Comparator <Employee25>{
+        return emp1.salary-emp2.salary;
+    }}
+     class NameComparator implements Comparator <Employee25>{
 
         @Override
         public int compare(Employee25 emp1, Employee25 emp2) {
-            if (emp1.id == emp2.id){
-                return 0;}
-            else if (emp1.id<emp2.id){
-                return  -1;
-            }
-            else {return 1;}
+          return emp1.name.compareTo(emp2.name);
         }
     }
-}
+
 
