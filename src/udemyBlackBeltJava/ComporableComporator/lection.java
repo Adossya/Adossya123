@@ -1,4 +1,4 @@
-package udemyBlackBeltJava;
+package udemyBlackBeltJava.ComporableComporator;
 
 import java.util.ArrayList;
 import java.util.Collections;
