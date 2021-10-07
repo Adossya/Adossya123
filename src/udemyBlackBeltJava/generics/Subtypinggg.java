@@ -3,7 +3,7 @@ package udemyBlackBeltJava.generics;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test2 {
+public class Subtypinggg {
     public static void main(String[] args) {
 //        X x= new Y();
 //        List<X> list1=new ArrayList<X>();
