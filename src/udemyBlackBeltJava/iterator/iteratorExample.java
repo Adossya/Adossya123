@@ -13,6 +13,7 @@ public class iteratorExample {
         Iterator <String> iterator1=arrayList1.iterator();
         while (iterator1.hasNext()){
             iterator1.next();
+
 //dasda
             //dsadsadadasd
             iterator1.remove();
