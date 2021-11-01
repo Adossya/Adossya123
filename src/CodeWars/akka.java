@@ -5,5 +5,6 @@ public class akka {
         System.out.println("akka");
         System.out.println("maka");
         System.out.println("maka");
+        System.out.println("dskasdksa");
     }
 }
