@@ -6,5 +6,6 @@ public class akka {
         System.out.println("maka");
         System.out.println("maka");
         System.out.println("dskasdksa");
+        System.out.println("dsada");
     }
 }
