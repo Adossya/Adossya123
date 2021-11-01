@@ -14,6 +14,7 @@ public class iteratorExample {
         while (iterator1.hasNext()){
             iterator1.next();
 //dasda
+            //dsadsadadasd
             iterator1.remove();
         }
     }
