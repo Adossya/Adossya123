@@ -39,11 +39,16 @@ public class BinarySearch {
         employeeList.add(emp4);
         employeeList.add(emp5);
         employeeList.add(emp6);
-
+        employeeList.add(emp7);
+        System.out.println(employeeList);
+        Collections.sort(employeeList);
+        System.out.println(employeeList);
+        int index2=Collections.binarySearch(employeeList,new Employee(12,"misha",6440));
+        System.out.println(index2);
     }
 }
 
-class Employee {
+class Employee implements Comparable <Employee> {
     int id;
     String name;
     int salary;
@@ -55,6 +60,14 @@ class Employee {
     }
 
     @Override
+    public int compareTo(Employee anotherEmp) {
+        int result=this.id - anotherEmp.id;
+        if(result==0){
+            result=this.name.compareTo(anotherEmp.name);}
+        return result;
+    }
+
+    @Override
     public String toString() {
         return "Employee{" +
                 "id=" + id +
@@ -63,3 +76,5 @@ class Employee {
                 '}';
     }
 }
+
+
