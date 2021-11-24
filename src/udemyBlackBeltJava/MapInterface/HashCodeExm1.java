@@ -23,7 +23,9 @@ public class HashCodeExm1 {
         System.out.println(st4.hashCode() );
         System.out.println(st1.equals(st4));
 
-
+        for (Map.Entry<Student,Double> entry: map1.entrySet()){
+            System.out.println(entry.getKey()+" "+entry.getValue());
+        }
 
     }
 }
