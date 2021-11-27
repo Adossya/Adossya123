@@ -3,6 +3,7 @@ package udemyBlackBeltJava.MapInterface;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
+import java.util.TreeMap;
 
 public class HashCodeExm1 {
     public static void main(String[] args) {
@@ -14,6 +15,7 @@ public class HashCodeExm1 {
         map1.put(st2,8.7);
         map1.put(st3,9.2);
         System.out.println(map1);
+        TreeMap<Double,Student> treeMap1=new TreeMap<>();
 
         Student st4=new Student("Zaur","Tregulov",3);
 //        boolean result= map1.containsKey(st4);
