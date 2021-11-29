@@ -25,9 +25,10 @@ import java.util.TreeMap;
         mapppp.put(7.2,st6);
         mapppp.put(4.2,st7);
         mapppp.put(4.92,st8);
-            System.out.println(mapppp);
-            System.out.println(mapppp.remove(0.2));
-            System.out.println(mapppp);
+        System.out.println(mapppp);
+        System.out.println(mapppp.descendingMap());
+        System.out.println(mapppp.tailMap(5.0));
+        System.out.println(mapppp.headMap(5.0));
 
 
     }
