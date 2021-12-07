@@ -23,6 +23,7 @@ public class listttt {
 
     }
 
+
     public static void main(String[] args) {
 
         List<Integer> list1=new ArrayList<>();
@@ -35,7 +36,6 @@ public class listttt {
         list1.add(50);
         list1.add(10);
         list1.add(20);
-
         System.out.println(list1);
         System.out.println(sortMethod(9,list1));
     }
