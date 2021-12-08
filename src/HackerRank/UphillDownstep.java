@@ -2,11 +2,11 @@ package HackerRank;
 
 public class UphillDownstep {
     public static int countingValleys(int steps, String path) {
-        int schet=0;
-        int vallays=0;
+        var schet=0;
+        var vallays=0;
         char [] array=path.toCharArray();
 
-        for (int i=0;i<array.length;i++){
+        for (var i=0;i<array.length;i++){
             if (array[i]=='U'){schet+=1;};
             if (array[i]=='D'){schet-=1;};
             if (schet==0 && array[i]=='U'){vallays+=1;}
