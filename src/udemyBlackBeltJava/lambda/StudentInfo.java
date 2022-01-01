@@ -17,7 +17,7 @@ public class StudentInfo {
         students.add(st5);
 
     }
-    void printStudentOverGrade (ArrayList <Student> al, double avr_Grade){}
-    void printStudentUnderrGrade (ArrayList <Student> al, int age){}
-    void printStudentOGrade (ArrayList <Student> al, double avr_Grade){}
+    void printStudentsOverGrade (ArrayList <Student> al, double avr_Grade){}
+    void printStudentsUnderrGrade (ArrayList <Student> al, int age){}
+    void printStudentsOGrade (ArrayList <Student> al, double avr_Grade){}
 }
