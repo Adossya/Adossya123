@@ -1,10 +1,5 @@
 package CodeWars;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class KeypadHorror {
     public static void main(String[] args) {
         computerToPhone("123");
@@ -16,7 +11,6 @@ public class KeypadHorror {
         for (int i=0;i<array1.length;i++){
 
             switch (array1[i]){
-
                 case '1': array2[i]='7'; break;
                 case '2': array2[i]='8'; break;
                 case '3': array2[i]='9'; break;
@@ -27,7 +21,7 @@ public class KeypadHorror {
                 case '8': array2[i]='2'; break;
                 case '9': array2[i]='3'; break;
                 case '0': array2[i]='0'; break;
-                default:array2[i]=' '; break;
+                default:  array2[i]=' '; break;
             }
 
         }
