@@ -12,8 +12,6 @@ public class TheUniqueNumber {
 
         Set<Double> set = new HashSet<>(list);
         ArrayList<Double> list1 = new ArrayList<>(set);
-        System.out.println(list);
-        System.out.println(list1);
 
         for (int i = 0; i < list.size(); i++) {
             for (int j = 0; j < list1.size(); j++) {
