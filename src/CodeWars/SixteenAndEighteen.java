@@ -31,8 +31,7 @@ public class SixteenAndEighteen {
                 list1.add(0,'0');
             }
         }
-        int summ=0;
-        List <Integer> list3=new ArrayList<>();
+         List <Integer> list3=new ArrayList<>();
         for (int i=0; i<dlinna; i++){
             list3.add(Character.getNumericValue(list1.get(i))+Character.getNumericValue(list2.get(i)));
         }
