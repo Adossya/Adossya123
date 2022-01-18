@@ -1,18 +1,14 @@
 package CodeWars;
 
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
 
 
 public class TheUniqueNumber {
     public static double findUniq(double[] arr) {
-        ArrayList<Double> list = new ArrayList<>();
-        for (double a : arr) {
-            list.add(a);
-        }
+
+        List<Double> list = DoubleStream.of(arr).boxed().collect(Collectors.toList());
         Collections.sort(list);
 
         Set<Double> set = new LinkedHashSet<>(list);
