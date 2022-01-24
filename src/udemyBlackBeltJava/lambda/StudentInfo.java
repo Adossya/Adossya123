@@ -28,8 +28,8 @@ public class StudentInfo {
         students.add(st4);
         students.add(st5);
         StudentInfooo info=new StudentInfooo();
-//        info.testStudent (students,new checkOvergrade());
-        System.out.println("-----");
+//      info.testStudent (students,new checkOvergrade());
+//        System.out.println("-----");
 //        info.testStudent(students, new StudentChecks() {
 //            @Override
 //            public boolean check(Student s) {
@@ -37,11 +37,19 @@ public class StudentInfo {
 //            }
 //        });
 
-        info.testStudent(students,(Student s) -> {return s.age<30;});
+        Predicate <Student> p1=(Student sb1) -> {return sb1.avr_Grade >7.5;};
+        Predicate <Student> p2=(Student sb1) -> {return sb1.sex == 'm';};
+//      info.testStudent(students,p1);
+//      info.testStudent(students,p2);
+//      info.testStudent(students,p1.and(p2)); // объединить две проверки
+//      info.testStudent(students,p1.or(p2));
+        info.testStudent(students, p1.negate()); // отрицать принципы p1 , выведуться все что выше 7.5
 
-        System.out.println("======");
-        info.testStudent(students,(Student s)->{return s.avr_Grade>8;} );
-        System.out.println("-----");
+//        info.testStudent(students,(Student s) -> {return s.age<30;});
+//
+//        System.out.println("======");
+//        info.testStudent(students,(Student s)->{return s.avr_Grade>8;} );
+//        System.out.println("-----");
         info.testStudent(students,(Student s)->{
             return s.age>20 && s.avr_Grade<10 && s.sex=='m';
         });
