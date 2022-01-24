@@ -15,6 +15,7 @@ public class FakeBinary {
         String s1="45385593107843568";
         System.out.println(fakeBin(s1));
     }
+
 }
 //public class FakeBinary {
 //    public static String fakeBin(String numberString) {

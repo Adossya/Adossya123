@@ -14,9 +14,6 @@ public class KeypadHorror {
                 case '1': array2[i]='7'; break;
                 case '2': array2[i]='8'; break;
                 case '3': array2[i]='9'; break;
-                case '4': array2[i]='4'; break;
-                case '5': array2[i]='5'; break;
-                case '6': array2[i]='6'; break;
                 case '7': array2[i]='1'; break;
                 case '8': array2[i]='2'; break;
                 case '9': array2[i]='3'; break;

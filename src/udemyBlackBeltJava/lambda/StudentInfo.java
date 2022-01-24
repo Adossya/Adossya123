@@ -1,12 +1,14 @@
 package udemyBlackBeltJava.lambda;
 
 import java.util.ArrayList;
+import java.util.function.Predicate;
 
 
 class StudentInfooo {
-    void testStudent (ArrayList<Student> al, StudentChecks sc){
+
+    void testStudent (ArrayList<Student> al, Predicate <Student> pr){
         for (Student s:al){
-            if (sc.check(s)){
+            if (pr.test(s)){
                 System.out.println(s);
             }
         }
@@ -26,7 +28,7 @@ public class StudentInfo {
         students.add(st4);
         students.add(st5);
         StudentInfooo info=new StudentInfooo();
-        info.testStudent (students,new checkOvergrade());
+//        info.testStudent (students,new checkOvergrade());
         System.out.println("-----");
 //        info.testStudent(students, new StudentChecks() {
 //            @Override
@@ -70,13 +72,15 @@ public class StudentInfo {
 //    }
 }
 
-interface StudentChecks {
-    boolean check(Student s);
-}
+//interface StudentChecks {
+//    boolean check(Student s);
+//}
 
-class checkOvergrade implements StudentChecks {
-    @Override
-    public boolean check(Student s) {
-        return s.avr_Grade>8;
-    }
-}
+
+
+//class checkOvergrade implements StudentChecks {
+//    @Override
+//    public boolean check(Student s) {
+//        return s.avr_Grade>8;
+//    }
+//}
