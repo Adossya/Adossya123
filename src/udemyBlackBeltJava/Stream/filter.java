@@ -18,8 +18,10 @@ public class filter {
         students.add(st4);
         students.add(st5);
 
-        students= students.stream().filter(element
-                ->element.getAge()>22 && element.getAvgGrade()<7.2).collect(Collectors.toList());
+//        students= students.stream().filter(element
+//                ->element.getAge()>22 && element.getAvgGrade()<7.2).collect(Collectors.toList());
+        System.out.println(students);
+        students= students.stream().sorted((x,y)->x.getName().compareTo(y.getName())).collect(Collectors.toList());
         System.out.println(students);
     }
 
