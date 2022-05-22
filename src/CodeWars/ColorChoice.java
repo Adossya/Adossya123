@@ -32,7 +32,6 @@ public class ColorChoice {
         }
     }
 
-
     public static BigInteger factorial(int n) {
         BigInteger factorial = BigInteger.ONE;
         for (int i = 1; i <= n; i++) {
@@ -42,10 +41,10 @@ public class ColorChoice {
     }
 
     public static void main(String[] args) {
-        long posters = 12377L;
-        int colors = 17;
+        long posters = 6;
+        int colors = 4;
         System.out.println(factorial(colors) + " factorial");
-        System.out.println(factorial(16) + " factorial");
+        System.out.println(factorial(20) + " factorial");
         System.out.println(checkchoose(posters, colors));
     }
 }
