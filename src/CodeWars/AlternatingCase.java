@@ -10,8 +10,6 @@ public class AlternatingCase {
 
             c1=string.charAt(i);
             c2=s3.charAt(i);
-                System.out.println(c1+" ");
-                System.out.println(c2);
 
             if(c1==c2){
                 c1=Character.toLowerCase(c1);

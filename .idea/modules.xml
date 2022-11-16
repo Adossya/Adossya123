@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Adossya.iml" filepath="$PROJECT_DIR$/Adossya.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Crypt/Crypt.iml" filepath="$PROJECT_DIR$/Crypt/Crypt.iml" />
     </modules>
   </component>
 </project>
